@@ -4,6 +4,17 @@
 
 ---
 
+## Repo 名稱與 Release 治理
+
+| 項目 | 說明 |
+|------|------|
+| **Repo 名稱** | 目前為 `bule-team-firewall`（拼字 bule），建議更名為 `blue-team-firewall`。GitHub：Settings → General → Repository name |
+| **根目錄** | 僅保留 release 必要檔案：README、入口腳本、核心模組、`config/`、`engines/`、`tests/` |
+| **歸檔** | `archive/` 為迭代歷史（waf 變體、military/real 模組等），已加入 `.gitignore`，不納入 release |
+| **設定檔** | `config/` 集中管理 YAML/XML 設定 |
+
+---
+
 ## ⚠️ 測試模式分層（必讀）
 
 本專案**明確區分**三種測試模式，避免過度包裝：
@@ -92,6 +103,7 @@ python tests/test_mode_verification.py
 ```
 ├── README.md           # 本文件
 ├── requirements.txt
+├── config/             # 設定檔 (YAML/XML)
 ├── docs/               # 文件與報告
 ├── reports/            # 測試報告產出
 ├── scripts/            # 部署與啟動腳本
@@ -99,7 +111,8 @@ python tests/test_mode_verification.py
 ├── tests/              # 驗證測試
 ├── performance/        # 效能實測
 ├── packet_capture/     # 封包擷取
-└── go/                 # Go 高效能核心
+├── go/                 # Go 高效能核心
+└── archive/            # 歸檔（.gitignore，不納入 release）
 ```
 
 ## 報告

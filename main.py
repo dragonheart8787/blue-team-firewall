@@ -49,7 +49,7 @@ logger = logging.getLogger(__name__)
 class MilitaryFirewallSystem:
     """軍事級防火牆系統主類別"""
     
-    def __init__(self, config_file: str = "firewall_config.yaml"):
+    def __init__(self, config_file: str = "config/firewall_config.yaml"):
         self.config_file = config_file
         self.running = False
         self.threads = []
@@ -327,7 +327,7 @@ def signal_handler(signum, frame):
 def main():
     """主程式"""
     parser = argparse.ArgumentParser(description='軍事級防火牆系統')
-    parser.add_argument('--config', '-c', default='firewall_config.yaml',
+    parser.add_argument('--config', '-c', default='config/firewall_config.yaml',
                        help='配置檔案路徑')
     parser.add_argument('--daemon', '-d', action='store_true',
                        help='以守護進程模式運行')

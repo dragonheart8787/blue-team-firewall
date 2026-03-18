@@ -56,7 +56,7 @@ def create_config_files():
     print("⚙️ 正在建立配置檔案...")
     
     # 檢查配置檔案是否存在
-    if not Path("firewall_config.yaml").exists():
+    if not Path("config/firewall_config.yaml").exists():
         print("⚠️ 配置檔案不存在，請手動建立或使用預設配置")
     
     return True
@@ -139,7 +139,7 @@ def main():
     print("\n" + "=" * 50)
     print("🎉 安裝完成！")
     print("\n下一步:")
-    print("1. 編輯配置檔案: firewall_config.yaml")
+    print("1. 編輯配置檔案: config/firewall_config.yaml")
     print("2. 啟動系統: python main.py")
     print("3. 訪問儀表板: http://localhost:5000")
     print("4. 預設帳號: admin / military2024")

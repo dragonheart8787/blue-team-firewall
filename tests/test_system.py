@@ -53,7 +53,7 @@ class TestMilitaryFirewallSystem(unittest.TestCase):
         }
         
         # 建立測試組件
-        self.firewall = MilitaryFirewall("firewall_config.yaml")
+        self.firewall = MilitaryFirewall("config/firewall_config.yaml")
         self.ids = IntrusionDetectionSystem(self.config['ids'])
         self.threat_intel = ThreatIntelligenceManager(self.config['threat_intel'])
         self.packet_filter = PacketFilterEngine()
@@ -269,7 +269,7 @@ def run_performance_test():
     """執行效能測試"""
     print("🚀 執行效能測試...")
     
-    firewall = MilitaryFirewall("firewall_config.yaml")
+    firewall = MilitaryFirewall("config/firewall_config.yaml")
     
     # 建立大量測試封包
     packets = []

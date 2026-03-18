@@ -33,7 +33,7 @@ def test_core_modules():
     print("-" * 40)
     try:
         import yaml
-        with open('real_ultimate_defense_config.yaml', 'r', encoding='utf-8') as f:
+        with open('config/real_ultimate_defense_config.yaml', 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
         
         test_results['configuration']['config_loaded'] = True

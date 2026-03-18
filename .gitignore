@@ -29,6 +29,9 @@ soar_execution.log
 # 報告產出（可選：若不想追蹤生成的報告可取消註解）
 # reports/
 
+# 歸檔（迭代歷史，不納入 release）
+archive/
+
 # 系統
 .DS_Store
 Thumbs.db

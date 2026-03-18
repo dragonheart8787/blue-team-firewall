@@ -16,7 +16,7 @@ import threading
 class SuricataIPSInline:
     """Suricata IPS 內聯管理器"""
     
-    def __init__(self, config_file: str = "suricata.yaml"):
+    def __init__(self, config_file: str = "config/suricata.yaml"):
         self.logger = logging.getLogger(__name__)
         self.config_file = config_file
         self.eve_log_path = r"C:\ProgramData\Suricata\logs\eve.json"

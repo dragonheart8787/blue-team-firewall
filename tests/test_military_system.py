@@ -21,7 +21,7 @@ class TestMilitaryFirewallSystem(unittest.TestCase):
     
     def setUp(self):
         """測試前準備"""
-        self.system = MilitaryFirewallSystem("firewall_config.yaml")
+        self.system = MilitaryFirewallSystem("config/firewall_config.yaml")
         
     def test_system_initialization(self):
         """測試系統初始化"""
@@ -239,7 +239,7 @@ def run_performance_test():
     """執行效能測試"""
     print("\n🚀 執行軍事級系統效能測試...")
     
-    system = MilitaryFirewallSystem("firewall_config.yaml")
+    system = MilitaryFirewallSystem("config/firewall_config.yaml")
     
     # 測試加密效能
     from military_crypto import KeyType, SecurityLevel

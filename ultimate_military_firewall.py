@@ -50,7 +50,7 @@ logger = logging.getLogger(__name__)
 class UltimateMilitaryFirewall:
     """終極軍事級防火牆系統"""
     
-    def __init__(self, config_file: str = "ultimate_military_firewall_config.yaml"):
+    def __init__(self, config_file: str = "config/ultimate_military_firewall_config.yaml"):
         self.config_file = config_file
         self.running = False
         
