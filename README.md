@@ -1,4 +1,4 @@
-# 籃隊防禦系統
+# 藍隊防禦系統
 
 自製防火牆與資安防禦系統，涵蓋 DPI、IPS、APT、Zero-Day、DLP、AD/DC 偵測、記憶體取證、PCAP 分析、SOAR、CTI 等能力。
 
